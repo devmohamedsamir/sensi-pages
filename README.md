@@ -1,3 +1,7 @@
+![alt text](https://github.com/devmohamedsamir/sensi-pages/blob/main/1.png?raw=true)
+![alt text](https://github.com/devmohamedsamir/sensi-pages/blob/main/2.png?raw=true)
+![alt text](https://github.com/devmohamedsamir/sensi-pages/blob/main/3.png?raw=true)
+![alt text](https://github.com/devmohamedsamir/sensi-pages/blob/main/4.png?raw=true)
 ## In sensi project we make 4 pages 
     1. insights 
     2. events 
