@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://rubick.left4code.com/page/side-menu/light/chart -->
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./Chart - Rubick - Tailwind HTML Admin Template_files/logo.svg" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Insights</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="./Chart - Rubick - Tailwind HTML Admin Template_files/app.css">
+    <!-- END: CSS Assets-->
+    <link rel="stylesheet" href="insights.css">
+</head>
+<!-- END: Head -->
+
+<body class="py-5" data-new-gr-c-s-check-loaded="14.1050.0" data-gr-ext-installed="" cz-shortcut-listen="true" style="background-color: #151e27;">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu md:hidden">
+        <div class="mobile-menu-bar">
+            <a href="index.html" class="flex mr-auto">
+                <img alt="Midone - HTML Admin Template" class="w-6" src="./Chart - Rubick - Tailwind HTML Admin Template_files/logo.svg">
+            </a>
+            <a href="javascript:;" id="mobile-menu-toggler">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="bar-chart-2" data-lucide="bar-chart-2" class="lucide lucide-bar-chart-2 w-8 h-8 text-white transform -rotate-90">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+            </a>
+        </div>
+        <ul class="border-t border-white/[0.08] py-5 hidden">
+            <li>
+                <a href="index.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/events.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Events
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="insights.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/home-orange.svg" alt="">
+                    </div>
+                    <div class="menu__title" style="color:#C45A3B">
+                        Insights
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="heatmap.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/heatmaps.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Heat Maps
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="zone.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/zone.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Zone
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="index.html" class="menu">
+                    <div class="menu__icon">
+                        <img width="25" height="25" src="icons/needs-help.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Need Help
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Mobile Menu -->
+    <div class="flex">
+        <!-- BEGIN: Side Menu -->
+        <nav class="side-nav">
+            <a href="index.html" class="intro-x flex items-center pl-5 pt-4">
+                <span class="hidden xl:block text-white text-lg ml-3">
+                    <img src="images/Screen Shot 2022-02-28 at 1.06 1.png" alt="sensi-logo">
+                </span>
+            </a>
+            <div class="side-nav__devider my-6"></div>
+            <ul>
+                <li>
+                    <a href="index.html" class="side-menu">
+                        <div class="side-menu__icon">
+                            <img src="icons/events.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            Events
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="insights.html" class="side-menu side-menu--active">
+                        <div class="side-menu__icon">
+                            <img src="icons/home-orange.svg" alt="">
+                        </div>
+                        <div class="side-menu__title" style="color:#C45A3B">
+                            Insights
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="heatmap.html" class="side-menu">
+                        <div class="side-menu__icon">
+                            <img src="icons/heatmaps.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            Heatmaps
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="zone.html" class="side-menu">
+                        <div class="side-menu__icon">
+                            <img src="icons/zone.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            Zone
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="index.html" class="side-menu" style="position: fixed; left: 0; bottom: 0; color: white;text-align: center;padding-left: 44px;">
+                        <div class="side-menu__icon">
+                            <img width="25" height="25" src="icons/needs-help.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            Needs Help
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END: Side Menu -->
+        <!-- BEGIN: Content -->
+        <div class="content">
+            <!-- BEGIN: Top Bar -->
+            <div class="top-bar">
+                <div style="
+                width: 200px;
+                height: 48px;">
+                    <select class="sm:ml-auto mt-3 sm:mt-0 sm:w-auto form-select box" style="border: 2px solid #000000;">
+                            <option value="none">Start / End Date </option>
+                        </select>
+
+                </div>
+                <!-- BEGIN: Breadcrumb -->
+                <select class="sm:ml-auto mt-3 sm:mt-0 sm:w-auto form-select box" style="border: 2px solid #000000;">
+                    <option value="daily">Select Hall</option>
+                </select>
+                <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
+                    <ol class="breadcrumb">
+
+                    </ol>
+                </nav>
+                <!-- END: Breadcrumb -->
+                <!-- BEGIN: Search -->
+                <div class="intro-x relative mr-3 sm:mr-6">
+                    <div class="search hidden sm:block">
+                    </div>
+                    <div class="search-result">
+                        <div class="search-result__content">
+                            <div class="search-result__content__title">Pages</div>
+                            <div class="mb-5">
+                                <a href="#" class="flex items-center">
+                                    <div class="w-8 h-8 bg-success/20 dark:bg-success/10 text-success flex items-center justify-center rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="inbox" class="lucide lucide-inbox w-4 h-4" data-lucide="inbox">
+                                            <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                            <path
+                                                d="M5.45 5.11L2 12v6a2 2 0 002 2h16a2 2 0 002-2v-6l-3.45-6.89A2 2 0 0016.76 4H7.24a2 2 0 00-1.79 1.11z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="ml-3">Mail Settings</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 bg-pending/10 text-pending flex items-center justify-center rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="users" class="lucide lucide-users w-4 h-4" data-lucide="users">
+                                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 010 7.75"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="ml-3">Users &amp; Permissions</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="credit-card" class="lucide lucide-credit-card w-4 h-4" data-lucide="credit-card">
+                                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="ml-3">Transactions Report</div>
+                                </a>
+                            </div>
+                            <div class="search-result__content__title">Users</div>
+                            <div class="mb-5">
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-13.jpg">
+                                    </div>
+                                    <div class="ml-3">Leonardo DiCaprio</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        leonardodicaprio@left4code.com</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-12.jpg">
+                                    </div>
+                                    <div class="ml-3">Denzel Washington</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        denzelwashington@left4code.com</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-10.jpg">
+                                    </div>
+                                    <div class="ml-3">Robert De Niro</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        robertdeniro@left4code.com</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-13.jpg">
+                                    </div>
+                                    <div class="ml-3">Brad Pitt</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        bradpitt@left4code.com</div>
+                                </a>
+                            </div>
+                            <div class="search-result__content__title">Products</div>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full" src="./Chart - Rubick - Tailwind HTML Admin Template_files/preview-5.jpg">
+                                </div>
+                                <div class="ml-3">Sony Master Series A9G</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Electronic</div>
+                            </a>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full" src="./Chart - Rubick - Tailwind HTML Admin Template_files/preview-8.jpg">
+                                </div>
+                                <div class="ml-3">Sony A7 III</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Photography</div>
+                            </a>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full" src="./Chart - Rubick - Tailwind HTML Admin Template_files/preview-12.jpg">
+                                </div>
+                                <div class="ml-3">Dell XPS 13</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">PC &amp; Laptop
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full" src="./Chart - Rubick - Tailwind HTML Admin Template_files/preview-3.jpg">
+                                </div>
+                                <div class="ml-3">Samsung Q90 QLED TV</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Electronic</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Search -->
+                <!-- BEGIN: Notifications -->
+                <!-- END: Notifications -->
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in" role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                        <img alt="Midone - HTML Admin Template" src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-12.jpg">
+                    </div>
+                    <div class="dropdown-menu w-56">
+                        <ul class="dropdown-content bg-primary text-white">
+                            <li class="p-2">
+                                <div class="font-medium">Leonardo DiCaprio</div>
+                                <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">Backend Engineer</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="user" data-lucide="user" class="lucide lucide-user w-4 h-4 mr-2">
+                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg> Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="edit" data-lucide="edit" class="lucide lucide-edit w-4 h-4 mr-2">
+                                        <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path>
+                                        <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                    </svg> Add Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="lock" data-lucide="lock" class="lucide lucide-lock w-4 h-4 mr-2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0110 0v4"></path>
+                                    </svg> Reset Password
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="help-circle" data-lucide="help-circle" class="lucide lucide-help-circle w-4 h-4 mr-2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"></path>
+                                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                    </svg> Help
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="toggle-right" data-lucide="toggle-right" class="lucide lucide-toggle-right w-4 h-4 mr-2">
+                                        <rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect>
+                                        <circle cx="16" cy="12" r="3"></circle>
+                                    </svg> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+            <!-- END: Top Bar -->
+            <div class="intro-y flex items-center mt-8">
+            </div>
+
+            <h1 style="text-align: center;font-size: larger;">DELL XPS</h1>
+            <div class="d-flex justify-content-center">
+                <div class="col-12 centered">
+                    <!-- BEGIN: Vertical Bar Chart -->
+                    <img src="images/Hourly.png" alt="" id="hourly" style="display:block;">
+                    <img src="images/Daily.png" alt="" id="daily" style="display:none">
+                </div>
+
+                <div class="col-12">
+                    <button class="active btn-hourly" id="hourlybtn" onclick="showHourly()" style="top:700px;left:784px;padding-right: 150px;width: 19.4rem;height: 56px;"><span>Hourly</span></button>
+                    <button class="default btn-daily" id="dailybtn" onclick="showDaily()" style="width: 160px;height: 56px;left: 935px;top: 700px;"><span>Daily</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function showHourly() {
+            let hourly = document.getElementById("hourly");
+            let daily = document.getElementById("daily");
+
+            let dailybtn = document.getElementById("dailybtn");
+            let hourlybtn = document.getElementById("hourlybtn");
+
+            if (hourly.style.display == "none" || daily.style.display == "block") {
+                daily.style.display = "none";
+                hourly.style.display = "block";
+
+                hourlybtn.classList.remove("default");
+                hourlybtn.classList.add("active");
+                dailybtn.classList.remove("active");
+                dailybtn.classList.add("default");
+            }
+        }
+
+        function showDaily() {
+            let hourly = document.getElementById("hourly");
+            let daily = document.getElementById("daily");
+            let dailybtn = document.getElementById("dailybtn");
+            let hourlybtn = document.getElementById("hourlybtn");
+            if (daily.style.display == "none" || hourly.style.display == "block") {
+                dailybtn.classList.remove("default");
+                dailybtn.classList.add("active");
+                hourlybtn.classList.remove("active");
+                hourlybtn.classList.add("default");
+                hourly.style.display = "none";
+                daily.style.display = "block";
+            }
+        }
+    </script>
+    <!-- BEGIN: JS Assets-->
+    <script src="./Chart - Rubick - Tailwind HTML Admin Template_files/app.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
+</html>

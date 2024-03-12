@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)# -->
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/logo.svg" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Events</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/app.css">
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- END: CSS Assets-->
+
+</head>
+<!-- END: Head -->
+
+<body class="py-5" data-new-gr-c-s-check-loaded="14.1050.0" data-gr-ext-installed="" cz-shortcut-listen="true"
+    style="background-color: #151e27;">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu md:hidden">
+        <div class="mobile-menu-bar">
+            <a href="index.html" class="flex mr-auto">
+                <img alt="Midone - HTML Admin Template" class="w-6"
+                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/logo.svg">
+            </a>
+            <a href="javascript:;" id="mobile-menu-toggler">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    icon-name="bar-chart-2" data-lucide="bar-chart-2"
+                    class="lucide lucide-bar-chart-2 w-8 h-8 text-white transform -rotate-90">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+            </a>
+        </div>
+        <ul class="border-t border-white/[0.08] py-5 hidden">
+            <li>
+                <a href="index.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/events-orange.svg" alt="">
+                    </div>
+                    <div class="menu__title" style= "color:#C45A3B">
+                        Events
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="insights.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/home.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Insights
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="heatmap.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/heatmaps.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Heat Maps
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="zone.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/zone.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Zone
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="index.html" class="menu">
+                    <div class="menu__icon">
+                        <img width="25" height="25" src="icons/needs-help.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Need Help
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Mobile Menu -->
+    <div class="flex">
+        <!-- BEGIN: Side Menu -->
+        <nav class="side-nav">
+            <a href="index.html" class="intro-x flex items-center pl-5 pt-4">
+
+                <span class="hidden xl:block text-white text-lg ml-3">
+                    <img src="images/Screen Shot 2022-02-28 at 1.06 1.png" alt="sensi-logo">
+                </span>
+            </a>
+            <div class="side-nav__devider my-6"></div>
+            <ul>
+                <li>
+                    <a href="index.html" class="side-menu side-menu--active">
+                        <div class="side-menu__icon">
+                            <img src="icons/events-orange.svg" alt="">
+                        </div>
+                        <div class="side-menu__title"style = "color:#C45A3B">
+                            Events
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="insights.html" class="side-menu">
+                        <div class="side-menu__icon">
+                            <img src="icons/home.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            insights
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="heatmap.html" class="side-menu">
+                        <div class="side-menu__icon">
+                            <img src="icons/heatmaps.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            Heatmaps
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="zone.html" class="side-menu">
+                        <div class="side-menu__icon">
+                            <img src="icons/zone.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            zone
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="side-menu" style = "position: fixed; left: 0; bottom: 0; color: white;text-align: center;padding-left: 44px;">
+                        <div class="side-menu__icon">
+                            <img width="25" height="25" src="icons/needs-help.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            Need Help
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END: Side Menu -->
+
+        <!-- BEGIN: Content -->
+        <div class="content">
+            <!-- BEGIN: Top Bar -->
+            <div class="top-bar">
+                <div style="
+                width: 200px;
+                height: 48px;">
+                        <select class="sm:ml-auto mt-3 sm:mt-0 sm:w-auto form-select box"style="border: 2px solid #000000;">
+                            <option value="none">Start / End Date </option>
+                        </select>
+
+                </div>
+                <!-- BEGIN: Breadcrumb -->
+                <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
+
+                </nav>
+
+                <!-- END: Breadcrumb -->
+                <!-- BEGIN: Search -->
+
+                <!-- END: Search -->
+                <!-- BEGIN: Notifications -->
+
+                <!-- END: Notifications -->
+
+
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in"
+                        role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                        <img alt="Midone - HTML Admin Template"
+                            src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/profile-11.jpg">
+                    </div>
+                    <div class="dropdown-menu w-56">
+                        <ul class="dropdown-content bg-primary text-white">
+                            <li class="p-2">
+                                <div class="font-medium">Leonardo DiCaprio</div>
+                                <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">DevOps Engineer</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="user" data-lucide="user"
+                                        class="lucide lucide-user w-4 h-4 mr-2">
+                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg> Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="edit" data-lucide="edit"
+                                        class="lucide lucide-edit w-4 h-4 mr-2">
+                                        <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path>
+                                        <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                    </svg> Add Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="lock" data-lucide="lock"
+                                        class="lucide lucide-lock w-4 h-4 mr-2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0110 0v4"></path>
+                                    </svg> Reset Password
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="help-circle" data-lucide="help-circle"
+                                        class="lucide lucide-help-circle w-4 h-4 mr-2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"></path>
+                                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                    </svg> Help
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="toggle-right" data-lucide="toggle-right"
+                                        class="lucide lucide-toggle-right w-4 h-4 mr-2">
+                                        <rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect>
+                                        <circle cx="16" cy="12" r="3"></circle>
+                                    </svg> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+            <!-- END: Top Bar -->
+            <div class="grid grid-cols-12 gap-6 mt-5">
+                <!--Begin status-->
+                <div class="col-span-12 d-flex">
+
+                    <div class="grid grid-cols-12 gap-6 "style= "justify-content:center;padding-left: 230px;">
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in"style="justify-content: center;">
+                                <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                    <div class="report-box zoom-in">
+                                        <div class="box p-5">
+                                            <div class="flex"style="justify-content: center;">
+                                                <img src="icons/active.svg" alt="" style = "color:#1E9488
+                                                ;text-align:center;">
+                                            </div>
+                                            <div class="text-3xl font-medium leading-8 mt-6"style = "color:#1E9488;text-align:center;">30</div>
+                                            <div class="text-base text-slate-500 mt-1"style = "color:#1E9488;text-align:center;">Active</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="d-flex report-box zoom-in">
+                                <div class="box p-5 d-flex justify-content-center"style= "text-align:center">
+                                    <div class="flex"style="justify-content: center;">
+                                        <div>
+                                            <div class="tooltip cursor-pointer">
+                                                <img src="icons/inactive.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-3xl font-medium leading-8 mt-6"style = "color:#BC3135">12</div>
+                                    <div class="text-base text-slate-500 mt-1"style = "color:#BC3135;">In Active</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex"style="justify-content: center;">
+                                        <img src="icons/disabled.svg" alt="" style = "color:gray;text-align:center;">
+                                    </div>
+                                    <div class="text-3xl font-medium leading-8 mt-6"style = "color:gray;text-align:center;">5</div>
+                                    <div class="text-base text-slate-500 mt-1"style = "color:gray;text-align:center;">Disabled</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--end status -->
+                    <!-- BEGIN: Data List -->
+                    <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
+                        <table class="table table-report -mt-2">
+
+                            <tbody>
+                                <tr class="intro-x">
+                                    <td class="w-40">
+                                        <div class="flex">
+                                            <div class="w-10 h-10 image-fit zoom-in">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-15.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-3.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-4.jpg">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="font-medium whitespace-nowrap">Oppo Find X2 Pro</a>
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Smartphone &amp;
+                                            Tablet
+                                        </div>
+                                    </td>
+                                    <td class="text-center">50</td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-success">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" icon-name="check-square"
+                                                data-lucide="check-square"
+                                                class="lucide lucide-check-square w-4 h-4 mr-2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                                            </svg> Active
+                                        </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"
+                                                style=" text-decoration: underline;">
+                                                View
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x">
+                                    <td class="w-40">
+                                        <div class="flex">
+                                            <div class="w-10 h-10 image-fit zoom-in">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-5.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-2.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-10.jpg">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="font-medium whitespace-nowrap">Apple MacBook Pro 13</a>
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">PC &amp; Laptop
+                                        </div>
+                                    </td>
+                                    <td class="text-center">95</td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" icon-name="check-square"
+                                                data-lucide="check-square"
+                                                class="lucide lucide-check-square w-4 h-4 mr-2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                                            </svg> Inactive
+                                        </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"
+                                                style="text-decoration: underline;">
+                                                View
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x">
+                                    <td class="w-40">
+                                        <div class="flex">
+                                            <div class="w-10 h-10 image-fit zoom-in">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-2.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-11.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-9.jpg">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="font-medium whitespace-nowrap">Dell XPS 13</a>
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">PC &amp; Laptop
+                                        </div>
+                                    </td>
+                                    <td class="text-center">170</td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-success">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" icon-name="check-square"
+                                                data-lucide="check-square"
+                                                class="lucide lucide-check-square w-4 h-4 mr-2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                                            </svg> Active
+                                        </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"
+                                                style=" text-decoration: underline;">
+                                                View
+                                            </a>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x">
+                                    <td class="w-40">
+                                        <div class="flex">
+                                            <div class="w-10 h-10 image-fit zoom-in">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-4.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-3.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-14.jpg">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="font-medium whitespace-nowrap">Samsung Galaxy S20 Ultra</a>
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Smartphone &amp;
+                                            Tablet
+                                        </div>
+                                    </td>
+                                    <td class="text-center">50</td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-success">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" icon-name="check-square"
+                                                data-lucide="check-square"
+                                                class="lucide lucide-check-square w-4 h-4 mr-2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                                            </svg> Active
+                                        </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"
+                                                style=" text-decoration: underline;">
+                                                View
+                                            </a>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x">
+                                    <td class="w-40">
+                                        <div class="flex">
+                                            <div class="w-10 h-10 image-fit zoom-in">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-15.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-8.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-2.jpg">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="font-medium whitespace-nowrap">Samsung Galaxy S20 Ultra</a>
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Smartphone &amp;
+                                            Tablet
+                                        </div>
+                                    </td>
+                                    <td class="text-center">62</td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" icon-name="check-square"
+                                                data-lucide="check-square"
+                                                class="lucide lucide-check-square w-4 h-4 mr-2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                                            </svg> Inactive
+                                        </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"
+                                                style=" text-decoration: underline;">
+                                                View
+                                            </a>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x">
+                                    <td class="w-40">
+                                        <div class="flex">
+                                            <div class="w-10 h-10 image-fit zoom-in">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-10.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-9.jpg">
+                                            </div>
+                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                <img alt="Midone - HTML Admin Template" class="tooltip rounded-full"
+                                                    src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/preview-14.jpg">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="font-medium whitespace-nowrap">Oppo Find X2 Pro</a>
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Smartphone &amp;
+                                            Tablet
+                                        </div>
+                                    </td>
+                                    <td class="text-center">119</td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-success">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" icon-name="check-square"
+                                                data-lucide="check-square"
+                                                class="lucide lucide-check-square w-4 h-4 mr-2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                                            </svg> Active
+                                        </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"
+                                                style=" text-decoration: underline;">
+                                                View
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END: Data List -->
+                    <!-- BEGIN: Pagination -->
+                    <!-- END: Pagination -->
+                </div>
+                <!-- BEGIN: Delete Confirmation Modal -->
+                <div id="delete-confirmation-modal" class="modal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <div class="p-5 text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="x-circle" data-lucide="x-circle"
+                                        class="lucide lucide-x-circle w-16 h-16 text-danger mx-auto mt-3">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                                    </svg>
+                                    <div class="text-3xl mt-5">Are you sure?</div>
+                                    <div class="text-slate-500 mt-2">Do you really want to delete these records?
+                                        <br>This
+                                        process cannot be undone.
+                                    </div>
+                                </div>
+                                <div class="px-5 pb-8 text-center">
+                                    <button type="button" data-tw-dismiss="modal"
+                                        class="btn btn-outline-secondary w-24 mr-1">Cancel</button>
+                                    <button type="button" class="btn btn-danger w-24">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Delete Confirmation Modal -->
+            </div>
+            <!-- END: Content -->
+        </div>
+        <!-- BEGIN: Dark Mode Switcher-->
+
+        <!-- END: Dark Mode Switcher-->
+        <!-- BEGIN: Main Color Switcher-->
+
+        <!-- END: Main Color Switcher-->
+        <script></script>
+        <!-- BEGIN: JS Assets-->
+        <script src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/markerclusterer.js"></script>
+        <script src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/js"></script>
+        <script src="./CRUD Data List - Rubick - Tailwind HTML Admin Template_files/app.js"></script>
+        <!-- END: JS Assets-->
+
+
+
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>

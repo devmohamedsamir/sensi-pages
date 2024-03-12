@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./Chart - Rubick - Tailwind HTML Admin Template_files/logo.svg" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zone</title>
+    <style>
+        .needhelp{
+            position: fixed !important;
+            left: 0 !important; 
+            bottom: 0 !important;
+            color: white !important;
+            text-align: center !important;
+        }
+    </style>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="./Chart - Rubick - Tailwind HTML Admin Template_files/app.css">
+    <link rel="stylesheet" href="zone.css">
+    <!-- END: CSS Assets-->
+
+</head>
+<!-- END: Head -->
+
+<body class="py-5" data-new-gr-c-s-check-loaded="14.1050.0" data-gr-ext-installed="" cz-shortcut-listen="true"
+    style="background-color: #151e27;">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu md:hidden">
+        <div class="mobile-menu-bar">
+            <a href="index.HTML" class="flex mr-auto">
+                <img alt="Midone - HTML Admin Template" class="w-6"
+                    src="./Chart - Rubick - Tailwind HTML Admin Template_files/logo.svg">
+            </a>
+            <a href="javascript:;" id="mobile-menu-toggler">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    icon-name="bar-chart-2" data-lucide="bar-chart-2"
+                    class="lucide lucide-bar-chart-2 w-8 h-8 text-white transform -rotate-90">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+            </a>
+        </div>
+        <ul class="border-t border-white/[0.08] py-5 hidden">
+            <li>
+                <a href="index.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/events.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Events
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="insights.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/home.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Insights
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="heatmap.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/heatmaps.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Heatmaps
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="zone.html" class="menu">
+                    <div class="menu__icon">
+                        <img src="icons/zone.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Zone
+                    </div>
+                </a>
+            </li>
+            <li >
+                <a href="index.html" class="menu">
+                    <div class="menu__icon">
+                        <img width="25" height="25" src="icons/needs-help.svg" alt="">
+                    </div>
+                    <div class="menu__title">
+                        Need Help
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Mobile Menu -->
+    <div class="flex">
+        <!-- BEGIN: Side Menu -->
+        <nav class="side-nav">
+            <a href="index.html" class="intro-x flex items-center pl-5 pt-4">
+                <span class="hidden xl:block text-white text-lg ml-3">
+                    <img src="images/Screen Shot 2022-02-28 at 1.06 1.png" alt="sensi-logo">
+                </span>
+            </a>
+            </a>
+            <div class="side-nav__devider my-6"></div>
+            <ul>
+                <li>
+                    <a href="index.html" class="side-menu">
+                        <div class="side-menu__icon">
+                            <img src="icons/events.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            Events
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="insights.html" class="side-menu">
+                        <div class="side-menu__icon">
+                            <img src="icons/home.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            insights
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="heatmap.html" class="side-menu">
+                        <div class="side-menu__icon">
+                            <img src="icons/heatmaps.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            Heatmaps
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="zone.html" class="side-menu side-menu--active">
+                        <div class="side-menu__icon">
+                            <img src="icons/zone-orange.svg">
+                        </div>
+                        <div class="side-menu__title"style= "color:#C45A3B">
+                            zone
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="side-menu" style = "position: fixed; left: 0; bottom: 0; color: white;text-align: center;padding-left: 44px;">
+                        <div class="side-menu__icon">
+                            <img width="25" height="25" src="icons/needs-help.svg" alt="">
+                        </div>
+                        <div class="side-menu__title">
+                            Need Help
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END: Side Menu -->
+        <!-- BEGIN: Content -->
+        <div class="content">
+
+            <!-- BEGIN: Top Bar -->
+            <div class="top-bar">
+                <div style="
+                width: 200px;
+                height: 48px;">
+                        <select class="sm:ml-auto mt-3 sm:mt-0 sm:w-auto form-select box"style="border: 2px solid #000000;">
+                            <option value="none">Start / End Date </option>
+                        </select>
+
+                </div>
+                <select class="sm:ml-auto mt-3 sm:mt-0 sm:w-auto form-select box"  style="border: 2px solid #000000;">
+                    <option value="daily">Select Hall</option>
+                </select>
+                <!-- BEGIN: Breadcrumb -->
+                <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
+                    <ol class="breadcrumb">
+
+                    </ol>
+                </nav>
+                <!-- END: Breadcrumb -->
+
+
+                <!-- BEGIN: Search -->
+                <div class="intro-x relative mr-3 sm:mr-6">
+                    <div class="search hidden sm:block">
+
+                    </div>
+
+                    <div class="search-result">
+                        <div class="search-result__content">
+                            <div class="search-result__content__title">Pages</div>
+                            <div class="mb-5">
+                                <a href="#" class="flex items-center">
+                                    <div
+                                        class="w-8 h-8 bg-success/20 dark:bg-success/10 text-success flex items-center justify-center rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" icon-name="inbox"
+                                            class="lucide lucide-inbox w-4 h-4" data-lucide="inbox">
+                                            <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                            <path
+                                                d="M5.45 5.11L2 12v6a2 2 0 002 2h16a2 2 0 002-2v-6l-3.45-6.89A2 2 0 0016.76 4H7.24a2 2 0 00-1.79 1.11z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="ml-3">Mail Settings</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div
+                                        class="w-8 h-8 bg-pending/10 text-pending flex items-center justify-center rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" icon-name="users"
+                                            class="lucide lucide-users w-4 h-4" data-lucide="users">
+                                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 010 7.75"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="ml-3">Users &amp; Permissions</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div
+                                        class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" icon-name="credit-card"
+                                            class="lucide lucide-credit-card w-4 h-4" data-lucide="credit-card">
+                                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="ml-3">Transactions Report</div>
+                                </a>
+                            </div>
+                            <div class="search-result__content__title">Users</div>
+                            <div class="mb-5">
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                            src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-13.jpg">
+                                    </div>
+                                    <div class="ml-3">Leonardo DiCaprio</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        leonardodicaprio@left4code.com</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                            src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-12.jpg">
+                                    </div>
+                                    <div class="ml-3">Denzel Washington</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        denzelwashington@left4code.com</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                            src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-10.jpg">
+                                    </div>
+                                    <div class="ml-3">Robert De Niro</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        robertdeniro@left4code.com</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                            src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-13.jpg">
+                                    </div>
+                                    <div class="ml-3">Brad Pitt</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        bradpitt@left4code.com</div>
+                                </a>
+                            </div>
+                            <div class="search-result__content__title">Products</div>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="./Chart - Rubick - Tailwind HTML Admin Template_files/preview-5.jpg">
+                                </div>
+                                <div class="ml-3">Sony Master Series A9G</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Electronic</div>
+                            </a>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="./Chart - Rubick - Tailwind HTML Admin Template_files/preview-8.jpg">
+                                </div>
+                                <div class="ml-3">Sony A7 III</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Photography</div>
+                            </a>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="./Chart - Rubick - Tailwind HTML Admin Template_files/preview-12.jpg">
+                                </div>
+                                <div class="ml-3">Dell XPS 13</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">PC &amp; Laptop
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="./Chart - Rubick - Tailwind HTML Admin Template_files/preview-3.jpg">
+                                </div>
+                                <div class="ml-3">Samsung Q90 QLED TV</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Electronic</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Search -->
+                <!-- BEGIN: Notifications -->
+                <div class="intro-x dropdown mr-auto sm:mr-6">
+
+                    <div class="notification-content pt-2 dropdown-menu">
+                        <div class="notification-content__box dropdown-content">
+                            <div class="notification-content__title">Notifications</div>
+                            <div class="cursor-pointer relative flex items-center ">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-13.jpg">
+                                    <div
+                                        class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+                                    </div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Leonardo DiCaprio</a>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact
+                                        that a reader will be distracted by the readable content of a page when looking
+                                        at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-12.jpg">
+                                    <div
+                                        class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+                                    </div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Denzel Washington</a>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of
+                                        passages of Lorem Ipsum available, but the majority have suffered alteration in
+                                        some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-10.jpg">
+                                    <div
+                                        class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+                                    </div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Robert De Niro</a>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">06:05 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">Contrary to popular belief, Lorem
+                                        Ipsum is not simply random text. It has roots in a piece of classical Latin
+                                        literature from 45 BC, making it over 20</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-13.jpg">
+                                    <div
+                                        class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+                                    </div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Brad Pitt</a>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                        standard dummy text ever since the 1500</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-13.jpg">
+                                    <div
+                                        class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+                                    </div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Keanu Reeves</a>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact
+                                        that a reader will be distracted by the readable content of a page when looking
+                                        at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Notifications -->
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in"
+                        role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                        <img alt="Midone - HTML Admin Template"
+                            src="./Chart - Rubick - Tailwind HTML Admin Template_files/profile-12.jpg">
+                    </div>
+                    <div class="dropdown-menu w-56">
+                        <ul class="dropdown-content bg-primary text-white">
+                            <li class="p-2">
+                                <div class="font-medium">Leonardo DiCaprio</div>
+                                <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">Backend Engineer</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="user" data-lucide="user"
+                                        class="lucide lucide-user w-4 h-4 mr-2">
+                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg> Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="edit" data-lucide="edit"
+                                        class="lucide lucide-edit w-4 h-4 mr-2">
+                                        <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path>
+                                        <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                    </svg> Add Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="lock" data-lucide="lock"
+                                        class="lucide lucide-lock w-4 h-4 mr-2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0110 0v4"></path>
+                                    </svg> Reset Password
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="help-circle" data-lucide="help-circle"
+                                        class="lucide lucide-help-circle w-4 h-4 mr-2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"></path>
+                                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                    </svg> Help
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" icon-name="toggle-right" data-lucide="toggle-right"
+                                        class="lucide lucide-toggle-right w-4 h-4 mr-2">
+                                        <rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect>
+                                        <circle cx="16" cy="12" r="3"></circle>
+                                    </svg> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+            <!-- END: Top Bar -->
+            <!-- BEGIN: General Report -->
+            <div class="col-span-12 mt-8">
+                <div class="col-span-12 mt-8">
+                    <div class="intro-y flex items-center h-10">
+                    </div>
+                    <div class="grid grid-cols-12 gap-6 mt-5">
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <img src="icons/average.svg" alt="">
+                                        <div class="ml-auto">
+
+                                        </div>
+                                    </div>
+                                    <div class="text-3xl font-medium leading-8 mt-6">1570</div>
+                                    <div class="text-base text-slate-500 mt-1">Average Dwell Time</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <img src="icons/unique.svg" alt="">
+                                    </div>
+                                    <div class="text-3xl font-medium leading-8 mt-6">12</div>
+                                    <div class="text-base text-slate-500 mt-1">Unique MACs</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <img src="icons/total-macs.svg" alt="">
+                                    </div>
+                                    <div class="text-3xl font-medium leading-8 mt-6">350</div>
+                                    <div class="text-base text-slate-500 mt-1">Total MACs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row" style="display:flex;justify-content: space-around;">
+                    <div class="col-4" >
+                        <select  class="form-select box"  style="background-color: black;color: white; ">
+                            <option value="none"style="background-color: white;color: black;">Select Zone</option>
+                            <option value="zone1"style="background-color: white;color: black;"> zone 1</option>
+                            <option value="zone2"style="background-color: white;color: black;">zone 2</option>
+                            <option value="zone3"style="background-color: white;color: black;">zone 3</option>
+                        </select>
+                    </div>
+                    <div class="col-4" width="639px" ;height="387px">
+                        <img src="images/heatmap.png">
+                    </div>
+                    <div class="col-4">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div><button class="btn "
+                                style="height:48px;width: 48px;border-radius: 100px;background-color: #C45A3B;"> <img
+                                    src="icons/plus.svg" alt="+"></button></div>
+                        <br>
+                        <br>
+                        <div><button class="btn "
+                                style="height:48px;width: 48px;border-radius: 100px;background-color: #C45A3B;"> <img
+                                    src="icons/minus.svg" alt="-"></button></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- BEGIN: JS Assets-->
+    <script src="./Chart - Rubick - Tailwind HTML Admin Template_files/app.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
+</html>
